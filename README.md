@@ -16,4 +16,17 @@ Getting Started
 
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
+Usages
+----------
+### Add below code in your manifest.xml file.
+```
+<application
+  
+..............
+  <provider
+            android:authorities="com.example.android.pets"
+            android:name=".Data.PetProvider"
+            android:exported="false"></provider>
+            </application>
+```
 
